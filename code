@@ -1,0 +1,14 @@
+// Create an array of possible answers
+var answers = ["answer1", "answer2", "answer3", "answer4", "answer5"];
+
+// Function to spin the wheel
+function spinWheel() {
+  // Generate a random index
+  var index = Math.floor(Math.random() * answers.length);
+  
+  // Display the selected answer
+  alert("You landed on: " + answers[index]);
+}
+
+// Add a button to spin the wheel
+document.getElementById("spinButton").addEventListener("click", spinWheel);
